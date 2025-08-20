@@ -30,7 +30,7 @@ def eig_levenberg_marquardt(S_omega, tol=1e-8, max_iter=1000):
     eigvals, eigvecs = eigen_levenberg_marquardt(S_omega, tol=1e-11, max_iter=10000)
 
     # scale back the eigenvalues; eigenvectors remain unchanged
-    gamma = np.array([np.sqrt(-w2u0e0 * (1 + eigvals[:, i])) for i in range(N)]).T
+    eigvals = np.array([(-w2u0e0 * (1 + eigvals[:, i])) for i in range(N)]).T
     ```
     
     Parameters

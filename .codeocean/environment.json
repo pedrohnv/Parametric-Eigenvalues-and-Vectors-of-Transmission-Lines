@@ -1,0 +1,29 @@
+{
+	"version": 1,
+	"base_image": "registry.codeocean.com/codeocean/py-r:python3.12.8-R4.4.2-JupyterLab4.3.5-RStudiorstudio-server-2024.12.1-563-ubuntu22.04",
+	"options": {},
+	"installers": {
+		"pip3": {
+			"packages": [
+				{
+					"name": "eigenshuffle",
+					"version": "0.1.0"
+				},
+				{
+					"name": "matplotlib",
+					"version": "3.10.1"
+				},
+				{
+					"name": "numpy",
+					"version": "1.26.4"
+				},
+				{
+					"name": "scipy",
+					"version": "1.15.2"
+				}
+			],
+			"options": {},
+			"pre_install_options": {}
+		}
+	}
+}

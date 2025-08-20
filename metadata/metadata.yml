@@ -1,0 +1,14 @@
+metadata_version: 1
+name: Parametric Eigenvalues and Vectors of Transmission Lines
+description: This capsule has a notebook that compares some algorithms to obtain an
+  unshuffled set of eigen values and vectors to allow a parametric analysis of them.
+  It uses the telegrapher's equation for a multiconductor transmission line as contextual
+  example.
+tags:
+- Multiconductor Transmission Line
+- Eigenvalues
+- Eigenvectors
+authors:
+- name: Pedro H. N. Vieira
+  affiliations:
+  - name: Universidade Federal do Rio de Janeiro

@@ -27,7 +27,7 @@ def eig_levenberg_marquardt(S_omega, tol=1e-8, max_iter=1000):
     w2u0e0 = -omega**2 * mu_0 * epsilon_0
     S_omega = np.array([A[i] / (-w2u0e0[i]) - np.identity(N) for i in range(K)])
     
-    eigvals, eigvecs = eigen_levenberg_marquardt(S_omega, tol=1e-11, max_iter=10000)
+    eigvals, eigvecs = eig_levenberg_marquardt(S_omega, tol=1e-11, max_iter=10000)
 
     # scale back the eigenvalues; eigenvectors remain unchanged
     eigvals = np.array([(-w2u0e0 * (1 + eigvals[:, i])) for i in range(N)]).T
